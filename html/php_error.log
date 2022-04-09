@@ -1,0 +1,55 @@
+[02-Apr-2022 19:13:59 Asia/Tokyo] PHP Fatal error:  Uncaught ErrorException: include(/var/www/html/my_sns_ws/vendor/composer/../nunomaduro/collision/src/Adapters/Laravel/IgnitionSolutionsRepository.php): Failed to open stream: No such file or directory in /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php:571
+Stack trace:
+#0 /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php(571): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php(571): include()
+#2 /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /var/www/html/my_sns_ws/vendor/nunomaduro/collision/src/Adapters/Laravel/CollisionServiceProvider.php(50): Composer\Autoload\ClassLoader->loadClass()
+#4 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider->NunoMaduro\Collision\Adapters\Laravel\{closure}()
+#5 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /var/www/html/my_sns_ws/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php(65): Illuminate\Foundation\Application->make()
+#10 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler->renderForConsole()
+#11 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole()
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#13 {main}
+  thrown in /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php on line 571
+[02-Apr-2022 19:13:59 Asia/Tokyo] PHP Fatal error:  Uncaught ErrorException: include(/var/www/html/my_sns_ws/vendor/composer/../symfony/error-handler/Error/FatalError.php): Failed to open stream: No such file or directory in /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php:571
+Stack trace:
+#0 /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php(571): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php(571): include()
+#2 /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(220): Composer\Autoload\ClassLoader->loadClass()
+#4 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(207): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalErrorFromPhpError()
+#5 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#6 {main}
+  thrown in /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php on line 571
+[02-Apr-2022 20:49:14 Asia/Tokyo] PHP Fatal error:  Uncaught ErrorException: include(/var/www/html/my_sns_ws/vendor/composer/../nunomaduro/collision/src/Adapters/Laravel/IgnitionSolutionsRepository.php): Failed to open stream: No such file or directory in /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php:571
+Stack trace:
+#0 /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php(571): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php(571): include()
+#2 /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /var/www/html/my_sns_ws/vendor/nunomaduro/collision/src/Adapters/Laravel/CollisionServiceProvider.php(50): Composer\Autoload\ClassLoader->loadClass()
+#4 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider->NunoMaduro\Collision\Adapters\Laravel\{closure}()
+#5 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /var/www/html/my_sns_ws/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php(65): Illuminate\Foundation\Application->make()
+#10 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler->renderForConsole()
+#11 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole()
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#13 {main}
+  thrown in /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php on line 571
+[02-Apr-2022 20:49:14 Asia/Tokyo] PHP Fatal error:  Uncaught ErrorException: include(/var/www/html/my_sns_ws/vendor/composer/../symfony/error-handler/Error/FatalError.php): Failed to open stream: No such file or directory in /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php:571
+Stack trace:
+#0 /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php(571): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php(571): include()
+#2 /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(220): Composer\Autoload\ClassLoader->loadClass()
+#4 /var/www/html/my_sns_ws/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(207): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalErrorFromPhpError()
+#5 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#6 {main}
+  thrown in /var/www/html/my_sns_ws/vendor/composer/ClassLoader.php on line 571
+[03-Apr-2022 17:17:17 Asia/Tokyo] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes) in /var/www/html/my_sns/app/Http/Controllers/User/ChatController.php on line 130
