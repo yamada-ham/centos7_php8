@@ -30,5 +30,7 @@ services:
     - mysql-data:/var/lib/mysql
     working_dir: /var/www/html
     tty: true
+    platform: linux/x86_64
     privileged: true  
-    command: /sbin/init  
+    command: /sbin/init
+

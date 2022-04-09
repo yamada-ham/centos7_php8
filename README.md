@@ -76,10 +76,20 @@ $ cat /var/log/mysqld.log | grep password
 
 パスワードポリシー変更
 ```
-$ set global validate_password_length=4;
-$ set global validate_password_mixed_case_count=0;
-$ set global validate_password_number_count=0;
-$ set global validate_password_policy=LOW;
+#　コマンドラインの場合
+$ echo -e "validate_password.check_user_name=OFF\nvalidate_password.length=4\nvalidate_password.mixed_case_count=0\nvalidate_password.number_count=0\nvalidate_password.special_char_count=0\nvalidate_password.policy=LOW\n"  >> /etc/my.cnf
+
+
+#　/etc/my.cnf をvimaなどで編集する場合
+$ vim /etc/my.cnf
+
+# Password policy change
+validate_password.check_user_name=OFF 
+validate_password.length=4
+validate_password.mixed_case_count=0
+validate_password.number_count=0
+validate_password.special_char_count=0
+validate_password.policy=LOW
 ```
 
 <br>

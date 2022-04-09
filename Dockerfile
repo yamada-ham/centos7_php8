@@ -22,6 +22,9 @@ RUN yum -y install --enablerepo=remi,epel,remi-php80 php php-mysqlnd php-mbstrin
 RUN yum -y install https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm && \
     yum -y install mysql-community-server
 
+# MySQL 自動起動
+RUN systemctl enable mysqld
+
 # RUN yum -y install mod_ssl && \
 # yum -y install firewalld && \
 # yum -y install certbot python2-certbot-apache
@@ -55,7 +58,7 @@ COPY ./copy/php.ini /etc/php.ini
 COPY ./copy/phpMyAdmin.conf /etc/httpd/conf.d/phpMyAdmin.conf
 
 # MySQLの設定
-COPY ./copy/my.cnf /etc/my.cnf
+# COPY ./copy/my.cnf /etc/my.cnf
 
 # ディレクトリの所有者、グループを変更する。
 # RUN chown apache:apache /var/www/html/php_error.log
