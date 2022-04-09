@@ -77,7 +77,7 @@ $ cat /var/log/mysqld.log | grep password
 パスワードポリシー変更
 ```
 #　コマンドラインの場合
-$ echo -e "validate_password.check_user_name=OFF\nvalidate_password.length=4\nvalidate_password.mixed_case_count=0\nvalidate_password.number_count=0\nvalidate_password.special_char_count=0\nvalidate_password.policy=LOW\n"  >> /etc/my.cnf
+$ echo -e "validate_password.check_user_name=OFF\nvalidate_password.length=4\nvalidate_password.mixed_case_count=0\nvalidate_password.number_count=0\nvalidate_password.special_char_count=0\nvalidate_password.policy=LOW\n" >> /etc/my.cnf
 
 
 #　/etc/my.cnf をvimaなどで編集する場合
@@ -96,5 +96,5 @@ validate_password.policy=LOW
 
 パスワード変更
 ```
-$ SET PASSWORD FOR root@localhost=password('パスワード');
+$ ALTER USER 'root'@'localhost' identified BY 'root';
 ```
