@@ -25,6 +25,8 @@ services:
     - 28003:8003
     - 28004:8004
     - 6001:6001
+    - 3200:3200
+    - 3300:3300
     volumes:
     - ./html:/var/www/html:cached
     - mysql-data:/var/lib/mysql
