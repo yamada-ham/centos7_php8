@@ -40,22 +40,23 @@ RUN curl -sS https://getcomposer.org/installer | php && \
 # RUN yum -y install git
 
 # node.js 導入
-# RUN curl -fsSL https://rpm.nodesource.com/setup_16.x
-RUN yum install -y https://rpm.nodesource.com/pub_16.x/el/9/x86_64/nodesource-release-el9-1.noarch.rpm
+RUN curl -fsSL https://rpm.nodesource.com/setup_16.x | bash -
+# RUN yum install -y https://rpm.nodesource.com/pub_16.x/el/9/x86_64/nodesource-release-el9-1.noarch.rpm
 
 # lsof は、サーバーで特定のポート番号を待ち受けているかどうか、指定ファイルは誰が読み込んでいるのかを調べる
-RUN yum install -y nodejs \
-    yum install -y vim \
-    yum -y install lsof
+RUN yum install -y nodejs vim lsof
 
 # グローバル にgulpを導入
 RUN npm install -g gulp
 
+# 言語設定 UTF-8を使えるようにする
+ENV LC_ALL en_US.UTF-8
+
 # ホストで用意した設定ファイルを反映
-COPY ./copy/httpd.conf /etc/httpd/conf/httpd.conf
-COPY ./copy/v_host.conf /etc/httpd/conf.d/v_host.conf
-COPY ./copy/php.ini /etc/php.ini
-COPY ./copy/phpMyAdmin.conf /etc/httpd/conf.d/phpMyAdmin.conf
+# COPY ./copy/httpd.conf /etc/httpd/conf/httpd.conf
+# COPY ./copy/v_host.conf /etc/httpd/conf.d/v_host.conf
+# COPY ./copy/php.ini /etc/php.ini
+# COPY ./copy/phpMyAdmin.conf /etc/httpd/conf.d/phpMyAdmin.conf
 
 # MySQLの設定
 # COPY ./copy/my.cnf /etc/my.cnf
